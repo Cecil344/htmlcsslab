@@ -12,6 +12,8 @@ ul {
   list-style-type: none;
   margin: 0px;
   font-size: 2em;
+  display: flex;
+  flex-direction: column;
 }
 li {
   padding: 0px, 10px, 10px, 0px;
@@ -26,7 +28,7 @@ button {
   color: #f9fafc;
   border-style: none;
   height: 3em;
-  width: 100%;
+  width: 81%;
   font-size: 30px;
 }
 
@@ -52,11 +54,38 @@ p {
   font-size: 1em;
   border-color: gray;
 }
+.right {
+  visibility: hidden;
+}
 /*All changes made below this line will be for */
 
 @media only screen and (min-width: 768px) {
-  li {
-    display: flex;
+  header {
+    flex-direction: row;
+  }
+  button {
+    width: 10%;
+    height: 1em;
+    font-size: 16px;
+  }
+  ul {
+    flex-direction: row;
+    font-size: 1em;
+  }
+  p {
+    padding-top: 10%;
+  }
+  h2 {
+    font-size: 2em;
+    justify-content: flex-end;
+  }
+  h1 {
+    justify-content: flex-end;
+  }
+  .button2 {
+  }
+  .right {
+    visibility: visible;
   }
 }
 
